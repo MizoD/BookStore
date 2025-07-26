@@ -5,10 +5,7 @@ namespace BookStore.DTOs.Request
     public class EditProfileRequest
     {
         
-        [Range(0, 25)]
         public string FirstName { get; set; } = null!;
-        
-        [Range(0, 50)]
         public string LastName { get; set; } = null!;
         
         [DataType(DataType.EmailAddress)]

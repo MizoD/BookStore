@@ -2,10 +2,10 @@
 {
     public class HomeDataResponse
     {
-        public List<Book> RecommendedBooks { get; set; } = new();
-        public List<Book> FlashSaleBooks { get; set; } = new();
-        public List<Book> BestSellerBooks { get; set; } = new();
-        
+        public ICollection<Book> RecommendedBooks { get; set; } = new List<Book>();
+        public ICollection<Book> FlashSaleBooks { get; set; } = new List<Book>();
+        public ICollection<Book> BestSellerBooks { get; set; } = new List<Book>();
+
 
     }
 }
